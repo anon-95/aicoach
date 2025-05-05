@@ -6,7 +6,7 @@ from django.conf import settings
 import os
 from groq import Groq
 # Hugging Face Inference API URL and Token
-KEY = "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"
+KEY = os.getenv('KEY')
 # System prompt to guide the assistant's behavior
 SYSTEM_PROMPT = """You are a calm, knowledgeable emergency response assistant. Your job is to provide clear, step-by-step instructions for handling medical emergencies. Break all actions into simple, numbered steps that are easy to follow under stress.
 
